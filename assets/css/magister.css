@@ -8,13 +8,25 @@
   src: url("../fonts/ge_body/ge_body.ttf");
 }
 
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
 html {
-	background:#505D6E url(../images/body4.jpg) no-repeat center center fixed; 
-	min-height:100%;
+	background-image: url("assets/images/chandelier.jpg"),
+		url("assets/images/housefront.jpg"),
+		url("assets/images/kitchen.jpg"));
+	background: #505D6E no-repeat center center fixed;
+	min-height: 100%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
+}
+
+.bg-opacity {
+	background: rgba(255,255,255, 0.5);
 }
 
 body {
@@ -148,18 +160,15 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
 .title,
 .subtitle { 
+	font-family: 'GE Body', Helvetica, Arial, sans-serif;
 	font-weight:normal;
 	font-size:7em;
 	margin-bottom:15px; 
 	color:#FDF9F4; 
 	line-height:1em;
 }
-.title {
-	font-family: 'GE Body', Helvetica, Arial, sans-serif;
-}
 
 .subtitle { 
-	font-family: 'Mank Sans', Arial, Helvetica, Arial, sans-serif;
 	line-height:.9em;
 	font-size:3em;
 	margin-top:0;
@@ -264,12 +273,30 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	width:100px;
 }
 
+.widget-social {
+	padding: 0;
+	margin: 0;
+}
 
+.widget-social li {
+	display: inline-block;
+	margin-right: 5px;
+}
 
+.widget-social li a {
+	background: #2e2e2e;
+	text-align: center;
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.25em;
+	color: #FFF;
+}
 
-
-
-
+.widget-social li a:hover {
+	background: #891D1E;
+}
 
 
 
@@ -334,7 +361,10 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	color:#000
 }
 .theme-invert .navbar-toggle {
-	background: rgba(0, 0, 0, 0.12);
+	background: rgba(0, 0, 0, 0.3);
+}
+.theme-invert .navbar-toggle:hover {
+	background: rgba(0, 0, 0, 0.5);
 }
 .theme-invert .navbar-toggle .icon-bar {
   background: #333;
@@ -343,7 +373,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	color:#000;
 }
 .theme-invert .mainmenu .dropdown-menu a:hover { 
-	background:rgba(0,0,0,.1);
+	background:rgba(0,0,0,.3);
 	color:#000;
 }
 
@@ -354,7 +384,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 
 .theme-invert .btn-default {
-	background: rgba(0,0,0,.4);
+	background: rgba(0,0,0,.5);
 }
 .theme-invert .btn-default:hover,
 .theme-invert .btn-default:focus,
